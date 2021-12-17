@@ -1,4 +1,5 @@
 # Interfaz grafica
+
 blankBoard0="""
 ___________________
 |     |     |     |

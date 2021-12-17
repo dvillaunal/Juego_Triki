@@ -89,7 +89,6 @@ def win_check(board, mark):
         return True
     return False
 
-
 def player_choice(board):
     """
     Función para las entradas de los espacios del tablero original
@@ -99,6 +98,7 @@ def player_choice(board):
         choice = input("Este espacio no está libre (Escoga otro numero). Por favor, elija entre 1 y 9: ")
     return choice
 
+# Repetir el juego
 def replay():
     """
     Función para repetir el juego
@@ -109,6 +109,7 @@ def replay():
     if playAgain.lower() == 'n':
         return False
 
+# Junte de las funciones para correr el codigo
 if __name__ == "__main__":
     print('Bienvenido a Triki!')
     i = 1
@@ -133,7 +134,7 @@ if __name__ == "__main__":
             display_board(board)
             i += 1
             if win_check(board, marker):
-                print("You won !")
+                print("Ganaste!")
                 break
             game_on=full_board_check(board)
         if not replay():
